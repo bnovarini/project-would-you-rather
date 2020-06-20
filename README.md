@@ -12,6 +12,9 @@ It creates a simple frontend in React for to play the Would you Rather game.
 
 The current app functionality relies on a "mock" backend created by Udacity that doesn't handle creating new users, so to log in just select one of the user names that are available.
 
+Screenshot of the home screen when signed in:
+![Home screen screenshot](https://user-images.githubusercontent.com/49925472/85189245-44032600-b27b-11ea-9dae-b1c1026dc789.png)
+
 ## Getting started
 
 To get started developing right away:

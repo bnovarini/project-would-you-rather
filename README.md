@@ -1,14 +1,27 @@
 # Would You Rather Project
 
-This is the starter code for the final assessment project for Udacity's React & Redux course.
+This project is part of my Udacity React course.
 
-The `_DATA.js` file represents a fake database and methods that let you access the data. The only thing you need to edit in the `_DATA.js` file is the value of `avatarURL`. Each user should have an avatar, so you’ll need to add the path to each user’s avatar.
+It creates a simple frontend in React for to play the Would you Rather game.
 
-Using the provided starter code, you'll build a React/Redux front end for the application. We recommend using the [Create React App](https://github.com/facebook/create-react-app) to bootstrap the project.
+- Users can add questions that have the following format:
+  - Would you rather "option one" or "option two"
+- Users can also answer questions that are posted
+- When a user answers a question, they will be able to see how many votes each option had
+- There is also a leaderboard that will rank users based on the sum of both created and answered questions
+
+The current app functionality relies on a "mock" backend created by Udacity that doesn't handle creating new users, so to log in just select one of the user names that are available.
+
+## Getting started
+
+To get started developing right away:
+
+- install all project dependencies with `npm install`
+- start the development server with `npm start`
 
 ## Data
 
-There are two types of objects stored in our database:
+There are two types of objects stored in the database:
 
 - Users
 - Questions
@@ -46,7 +59,7 @@ Voting options are attached to questions. They include:
 | votes     | Array  | A list that contains the id of each user who voted for that option |
 | text      | String | The text of the option                                             |
 
-Your code will talk to the database via 4 methods:
+### Backend API reference
 
 - `_getUsers()`
 - `_getQuestions()`
@@ -94,7 +107,3 @@ _Parameters_: Object that contains the following properties: `authedUser`, `qid`
 | authedUser | String | The id of the user who answered the question                                            |
 | qid        | String | The id of the question that was answered                                                |
 | answer     | String | The option the user selected. The value should be either `"optionOne"` or `"optionTwo"` |
-
-## Contributing
-
-This repository is the starter code for _all_ Udacity students. Therefore, we most likely will not accept pull requests. For details, check out [CONTRIBUTING.md](https://github.com/udacity/reactnd-project-would-you-rather-starter/blob/master/CONTRIBUTING.md).
